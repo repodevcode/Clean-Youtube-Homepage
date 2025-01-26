@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="youtubeFavicon.ico">
+
+    <title>YouTube</title>
+</head>
+<body>
+<!--    <h1>Youtube</h1>-->
+    <br><br><br><br><br><br><br><br>
+
+<div id="bodyDiv">
+        <img draggable="false" src="youtube.jpg" style="width:301px; display: block; margin-left: auto;margin-right: auto;align-content: center"/>
+        <input type="search" placeholder="Search" id="search" />
+        <button  id="searchButton" onclick="search()"><img width="18px" src="searchButtonOnHover.png" alt="Go" draggable="false"> </button>
+        <br><br><br><br><br>
+    <div>
+            <button onclick="buttonClicked()" id="textButtonLibrary">📚Your Library</button>
+        </div>
+</div>
+</body>
+<script>
+    function buttonClicked(){
+        location.href="https://www.youtube.com/feed/library"
+    }
+    var input = document.getElementById("search");
+    input.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("searchButton").click();
+        }
+    });
+
+    function search(){
+        location.href="https://www.youtube.com/results?search_query="+document.getElementById("search").value
+    }
+
+</script>
+</html>
