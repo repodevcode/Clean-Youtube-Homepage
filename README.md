@@ -1,1 +1,1 @@
-Chrome Extension: [YouTube Recommendations Redirect]((https://github.com/repodevcode/Chrome-Extension-Youtube-Recommendations-Redirect)
+Chrome Extension: [YouTube Recommendations Redirect](https://github.com/repodevcode/Chrome-Extension-Youtube-Recommendations-Redirect)
